@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cara Sly</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %><link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+</head>
+<body><header>
+        <h1>	<a href="/"><%= image_tag("logo.png", class: "logo") %><br>There's Something About Ruby...</a></h1>
+        </header><br><br><br><div id="clear"></div>
+	<% if logged_in? %>
+          
+ <p class="flash">
+    <%= flash.notice %>
+  </p>
+   <% else %>
+        
+        <% end %>
+
+  <div id="container">
+    <div id="content">
+      <%= yield %>
+     <br /> 
+     <h6>
+        
+      </h6>
+    </div>
+  </div>
+  <footer><p>Cara Sly<br>Likes Ruby slightly more than yesterday<br><div class="login_home"> <% if logged_in? %>
+          <%= "Logged in as #{current_user.email}" %>   <%= link_to "(logout)", logout_path %> <br><br></div><% else %>
+        
+        <% end %></p></footer>
+</body>
+</html>
+
+      
