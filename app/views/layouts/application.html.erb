@@ -5,10 +5,15 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %><link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
 </head>
 <body><header>
-        <h1>	<a href="/"><%= image_tag("logo.png", class: "logo") %><br>There's Something About Ruby...</a></h1>
-        </header><br><br><br><div id="clear"></div>
+        <h1>	<a href="/"><%= image_tag("logo.png", class: "logo") %><br /><br />There's Something About Ruby</a></h1>
+        </header><br />
+   
+       
 	<% if logged_in? %>
           
  <p class="flash">
@@ -16,19 +21,25 @@
   </p>
    <% else %>
         
-        <% end %>
-
+        <% end %>  
   <div id="container">
     <div id="content">
+ <div class="blurb"><br>
+ <hr>
+ <p class="tagline">This is a blog about how much Ruby hurts my eyes... and other general complaints</p>
+<hr>
+ </div>
       <%= yield %>
      <br /> 
+
+
      <h6>
         
       </h6>
     </div>
   </div>
-  <footer><p>Cara Sly<br>Likes Ruby slightly more than yesterday<br><div class="login_home"> <% if logged_in? %>
-          <%= "Logged in as #{current_user.email}" %>   <%= link_to "(logout)", logout_path %> <br><br></div><% else %>
+  <footer><p>Cara Sly<br>There's Something About Ruby<br>Innit Dou<div class="login_home"> <% if logged_in? %>
+          <%= "Logged in as #{current_user.email}" %>   <%= link_to "(logout)", logout_path %>  </div><% else %>
         
         <% end %></p></footer>
 </body>

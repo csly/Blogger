@@ -4,10 +4,11 @@
   <% @articles.each do |article| %>
     <li>
     <h2><%= link_to article.title, article_path(article) %></h2>
+    <h4><%= distance_of_time_in_words(article.created_at, article.created_at) %> </h4> 
     <p class="article_main"><%= article.preview %></p>  
-    <p class="read_more"><%= link_to "Read This Article", article_path(article) %></p>
+    <p class="read_more"><%= link_to "Read This Article >", article_path(article) %></p>
 
-    </li> 
+    </li> <br />
   <% end %>
 </ul>
 

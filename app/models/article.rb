@@ -19,7 +19,7 @@ class Article < ActiveRecord::Base
 	end
 
 	def preview
-		body[0..299]
+		body[0..340] + "......."
 	end
 
 

@@ -1,4 +1,53 @@
 @charset "UTF-8";
+p.article_body {
+	text-align:justify;
+	font-size: 100%;
+	line-height:1.5em;
+	color:#9c9c9c;
+
+font-family: 'Merriweather', serif; 
+font-weight: lighter;
+}
+
+p.tagline{
+	color:#9c9c9c;
+}
+p.article_main {
+	text-align:justify;
+	font-size: 90%;
+	line-height:1.5em;
+	color:#9c9c9c;
+font-family: 'Merriweather', serif; 
+font-weight: lighter;
+}
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid #dbdbdb;
+    margin: 1em 0; padding: 0; }
+
+
+#container {
+  width: 90%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px 40px;
+  margin-top: 120px;
+}
+
+#content {
+  clear: both;
+  margin-top: 20px;
+}
+
+.blurb {
+
+	line-height:1em; 
+	font-size:1.4em; 
+	color:#3c3c3c;
+	}
+}
+hr {
+	width:70%; 
+}
 
 html,body,div,span,applet,object,
 iframe,h1,h2,h3,h4,h5,h6,p,blockquote,
@@ -22,7 +71,7 @@ tr,th,td {
 body { 
 	text-align:center;
 	line-height:2;
-	color:black;
+	color:#3c3c3c;
 	background:white
 	}
 	
@@ -103,7 +152,7 @@ body {
 	font-family: 'Oswald', sans-serif;
 	background:#fff;
 	margin:50px auto 100px;
-	color:#333333;
+	color:#3c3c3c;
 	padding:20px;
 	padding-left: 10%;
 	padding-right: 10%;
@@ -136,15 +185,19 @@ body {
 		color:#000;
     position: absolute;
     left: 0;
-    bottom: 0;
-    height: 100px;
+    bottom: 0; 
     width: 100%;
     text-align:center;
 }
 footer p {
-	padding:10px;
+	padding:10px; 
+	margin-top:10px; 
 	text-transform: uppercase;
-	font-size: 110%;
+	font-size: 110%; 
+	font-family: 'Oswald', sans-serif;
+	color:#9c9c9c;
+
+
 }
 
 p.read_more a {
@@ -164,20 +217,19 @@ p.read_more a:hover {
 .login_home {
 	text-align:center;
 }
-	header {
-		background-color: #fff;
+	header { 
 		color:#000;
 text-align:center;
     position: absolute;
     left: 0;
-    top: 0;
-    height: auto;
+    top: 0; 
     width: 100%;text-transform: uppercase;
 	font-size: 100%;
 	padding-top: 20px;
+	padding-bottom: 20px;
 }
 header a{
-	color: #333;
+	color: #3c3c3c;
 }
 ul#articles a{
 	padding-top:10px;
@@ -256,26 +308,39 @@ p.flash:empty {
 	}
 	
 h1 {
-	
-	margin:-20px -20px 15px;
+	text-transform:capitalize;
+	margin-top: 20px; 
 	padding:10px;
 	line-height:1em;
-	font-weight:normal;
-	color:#333;
+	font-weight:normal; 
 	position:relative; 
+	font-family: 'Roboto Slab', serif;
 	font-size:2.5em; 
 	}
 
- 
+ h2 {padding:20px;
+	color:#333;
+	font-size:1.6em;
+	line-height:1.1em;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+	}
 
-h2,h3,h4 {
+ }
+
+h3 {
 	padding:20px;
 	color:#333;
 	font-size:1.45em;
 	line-height:1.5em;
-	margin:.2em 0 .5em
+	margin:.2em 0 .1em
 	}
 
+	h4 {
+		 padding:10px;
+	color:#333;
+	font-size:1em; 
+	}
 .comment {
 	font-size:1em;
 	border-top:1px solid #ddd;
@@ -624,5 +689,5 @@ div.field_with_errors input {
 	}
 
 	.logo {
-		width: 80px;
+		width: 100px;
 	}
